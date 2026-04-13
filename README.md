@@ -6,6 +6,8 @@ Frontend Mentor challenge: **Age calculator app**.
 
 This is a simple age calculator that takes a birth date (day / month / year), validates the input, and displays the calculated age in **years**, **months**, and **days**.
 
+### Live Site
+- Live Site URL: https://ruqiash12-oss.github.io/Age-Calculator-App/
 ## Features
 
 - Calculate age from a given birth date
