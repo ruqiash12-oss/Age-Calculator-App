@@ -1,0 +1,137 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.calculator-container{
+  width: 500px;
+  max-width: 500px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px 10px 100px 10px;
+  margin: 90px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  
+}
+.date{
+  display: flex;
+  gap: 20px;
+}
+.date p{
+  font-size: 0.75rem;
+  color: hsl(0, 1%, 44%);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.date input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: 50px;
+}
+input:hover{
+  border: 1px solid hsl(0, 0%, 0%);
+}
+.field-label{
+  font-size: 0.75rem;
+  color: hsl(0, 1%, 44%);
+  margin-bottom: 5px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.field-error .field-label{
+  color: hsl(0, 100%, 67%);
+}
+
+.field-error input{
+  border: 1px solid hsl(0, 100%, 67%);
+  outline: none;
+}
+.arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+.line{
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+.calculate-btn{
+  background: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  width: 75px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 ;
+  border: none;
+}
+.calculate-btn img{
+  width: 30px;
+  height: 30px;  
+}
+.calculate-btn:hover{
+  background: hsl(259, 100%, 70%);
+  cursor: pointer;
+}
+.calculate-btn:active{
+  background: hsl(0,0%, 0%);
+}
+.age-calculator{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+}
+.age{
+  font-size: 3rem;
+  color: hsl(0, 0%, 0%);
+  font-weight: 900;
+}
+.date .error-message{
+  color: hsl(0, 100%, 67%);
+  font-size: 0.75rem;
+  margin-top: 5px;
+} 
+.js-age-calculator span{
+  color: inherit;
+}
+
+.js-age-calculator span.is-result{
+  color: hsl(259, 100%, 65%);
+}
+
+.js-age-calculator span.is-error{
+  color: hsl(259, 100%, 65%);
+}
+@media (max-width: 600px) {
+  .calculator-container{
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px 15px 80px 15px;
+    margin: 50px auto;
+  }
+  .arrow{
+    margin-top: 50px;
+  }
+  .calculate-btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+  .age{
+    font-size: 3rem;
+
+  }
+}
