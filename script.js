@@ -105,7 +105,7 @@ function validateInputs() {
   const month = Number(monthValue);
   const year = Number(yearValue);
 
-  /*if (!Number.isInteger(day) || day < 1 || day > 31) {
+  if (!Number.isInteger(day) || day < 1 || day > 31) {
     dayError.textContent = 'Must be a valid day';
     ok = false;
   }
@@ -145,7 +145,7 @@ function validateInputs() {
     yearError.textContent = 'Must be in the past';
     makeAllRed();
     return { ok: false };
-  }*/
+  }
   return { ok: true, day, month, year };
 }
 
