@@ -22,21 +22,21 @@
 
   <main class="calculator-container">
     <div class="date">
-      <div class="day-input">
-        <p class="field-label">DAY</p>
-        <input type="number" min="1" max="31">
+     <div class="day-input">
+        <p class="field-label">Day</p>
+        <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="DD">
         <p class="error-message day-error"></p>
       </div>
-
+      
       <div class="month-input">
         <p class="field-label">MONTH</p>
-        <input type="number" min="1" max="12">
+        <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="MM">
         <p class="error-message month-error"></p>
       </div>
-
+      
       <div class="year-input">
-        <p class="field-label">YEAR</p>
-        <input type="number" min="1900" max="2026">
+        <p class="field-label">Year</p>
+        <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="YYYY">
         <p class="error-message year-error"></p>
       </div>
     </div>
